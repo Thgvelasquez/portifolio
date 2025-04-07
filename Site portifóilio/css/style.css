@@ -30,7 +30,7 @@ body, ul {
                 transition: 0,3s;
             }
 
-            .contato {
+.contato {
                 background-color: #F7941D;
                 color: #F7941D;
                 padding: 8px 16px;
@@ -43,7 +43,7 @@ body, ul {
                 text-decoration: none;
             }
 
-            .container {
+  .container {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -54,18 +54,18 @@ body, ul {
                 background: #ffff;
             }
 
-            .text-content{
+ .text-content{
                 max-width: 470px;
                 text-align: left;
             }
 
-            h1{
+h1{
             font-size: 32px;
             font-weight: 400px;
             font-family: 'Times New Roman', Times, serif;
             color: black;          
             }
-            p{
+ p{
                 font-size: 20px;
                 line-height: 24px;
                 color: black;
