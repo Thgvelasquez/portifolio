@@ -71,3 +71,152 @@ h1{
                 color: black;
                 text-align: justify;
             }
+/* ... SEUS ESTILOS JÁ EXISTENTES ANTES DA SEÇÃO SOBRE ... */
+
+
+/* Estilos para a Seção "Sobre Mim" */
+.sobre {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.sobre .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column; /* Manter em coluna aqui */
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Os estilos de 'p' e 'img' que você já tem ou adicionou */
+.sobre p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    max-width: 700px; /* Importante para limitar a largura do texto */
+    margin-bottom: 30px;
+}
+
+.sobre img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ***** AQUI VOCÊ ADICIONA O NOVO BLOCO .sobre-content ***** */
+.sobre-content {
+    display: flex; /* Transforma este container em flex */
+    flex-direction: column; /* Por padrão em telas menores, um abaixo do outro */
+    align-items: center; /* Centraliza itens */
+    gap: 40px; /* Espaço entre os itens */
+    margin-top: 30px; /* Espaço acima deste bloco */
+    width: 100%; /* Ocupa toda a largura disponível no .container */
+    max-width: 900px; /* Limita a largura máxima do bloco de conteúdo */
+    justify-content: center; /* Centraliza o conteúdo dentro de si mesmo */
+}
+
+/* E a media query que acompanha o .sobre-content */
+@media (min-width: 768px) {
+    .sobre-content {
+        flex-direction: row; /* Coloca os itens lado a lado */
+        justify-content: center; /* Centraliza o bloco de texto e imagem */
+        align-items: flex-start; /* Alinha o texto ao topo da imagem */
+        text-align: left; /* Alinha o texto à esquerda dentro do seu bloco */
+    }
+
+    .sobre-content p {
+        text-align: left; /* Garante que o parágrafo esteja alinhado à esquerda quando lado a lado */
+        margin-right: 40px; /* Espaço entre o texto e a imagem */
+        /* Remova o max-width do .sobre p se ele estiver limitando demais quando lado a lado */
+        /* Ou ajuste para que ele se adapte ao lado da imagem */
+        max-width: 50%; /* Exemplo: o parágrafo ocupa metade da largura do .sobre-content */
+    }
+}
+
+/* ... SEUS ESTILOS PARA A SEÇÃO DE HABILIDADES (`.skills`) E OUTROS ELEMENTOS ABAIXO ... */
+
+
+
+
+
+
+.skills {
+    padding: 60px 0; /* Espaçamento interno superior e inferior */
+    text-align: center; /* Centraliza o título da seção */
+    background-color: #f9f9f9; /* Uma cor de fundo suave para a seção, opcional */
+}
+
+.skills .container {
+    max-width: 1200px; /* Limita a largura do conteúdo da seção */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 0 20px; /* Espaçamento lateral interno para o container */
+}
+
+.skills h2 {
+    font-size: 2.5em; /* Tamanho da fonte para o título principal da seção */
+    color: #333; /* Cor do título */
+    margin-bottom: 50px; /* Espaço abaixo do título */
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+    letter-spacing: 1.5px; /* Espaçamento entre as letras */
+}
+
+/* Estilos para o Container dos Cards (para organizá-los lado a lado) */
+.skill-cards {
+    display: flex; /* Transforma este container em um container flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas menores */
+    gap: 30px; /* Espaçamento entre os cards */
+}
+
+/* Estilos para Cada Card Individual de Habilidade */
+.skill-card {
+    background-color: #fff; /* Fundo branco para o card */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    padding: 30px; /* Espaçamento interno dentro do card */
+    width: 250px; /* Largura fixa do card (ajuste se necessário) */
+    text-align: center; /* Centraliza o texto e a imagem dentro do card */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para efeitos de hover */
+    display: flex; /* Usa flexbox para organizar o conteúdo interno (imagem, h3, p) */
+    flex-direction: column; /* Coloca os itens um abaixo do outro */
+    align-items: center; /* Centraliza os itens horizontalmente dentro do card */
+}
+
+/* Efeito ao passar o mouse sobre o card */
+.skill-card:hover {
+    transform: translateY(-10px); /* Move o card ligeiramente para cima ao passar o mouse */
+}
+
+.skill-card img {
+    width: 150px; /* Ajuste o tamanho da imagem dentro do card */
+    height: 150px; /* Garante que a imagem seja quadrada */
+    object-fit: cover; /* Recorta a imagem para preencher o espaço sem distorcer */
+    border-radius: 5px; /* Leves bordas arredondadas na imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+.skill-card h3 {
+    font-size: 1.5em; /* Tamanho da fonte para o título da habilidade */
+    color: #333; /* Cor do título da habilidade */
+    margin-bottom: 10px; /* Espaço abaixo do título da habilidade */
+}
+
+.skill-card p {
+    font-size: 1em; /* Tamanho da fonte para a descrição da habilidade */
+    color: #666; /* Cor da descrição */
+    line-height: 1.5; /* Espaçamento entre as linhas do parágrafo */
+}
