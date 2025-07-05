@@ -71,7 +71,7 @@ h1{
                 color: black;
                 text-align: justify;
             }
-/* ... SEUS ESTILOS JÁ EXISTENTES ANTES DA SEÇÃO SOBRE ... */
+/* ... SEUS ESTILOS JÁ EXISTENTES ANTES DA SEÇÃO SOBRE ... */   
 
 
 /* Estilos para a Seção "Sobre Mim" */
@@ -109,11 +109,13 @@ h1{
 }
 
 .sobre img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 300px; /* Largura da imagem */
+    height: 300px; /* Altura da imagem para ser um círculo perfeito */
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    object-position:top;
+
 }
 
 
@@ -161,7 +163,7 @@ h1{
 }
 
 .skills .container {
-    max-width: 1200px; /* Limita a largura do conteúdo da seção */
+    max-width: 1400px; /* Limita a largura do conteúdo da seção */
     margin: 0 auto; /* Centraliza o container na página */
     padding: 0 20px; /* Espaçamento lateral interno para o container */
 }
@@ -172,7 +174,7 @@ h1{
     margin-bottom: 50px; /* Espaço abaixo do título */
     text-transform: uppercase; /* Deixa o texto em maiúsculas */
     letter-spacing: 1.5px; /* Espaçamento entre as letras */
-}
+    }
 
 /* Estilos para o Container dos Cards (para organizá-los lado a lado) */
 .skill-cards {
